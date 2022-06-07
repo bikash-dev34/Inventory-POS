@@ -1,7 +1,7 @@
 <?php
 include_once'connectdb.php';
 session_start();
-if($_SESSION['useremail']==""){
+if($_SESSION['useremail']=="" OR $_SESSION['role']=='admin'){
     header('location:index.php');
 }
 
